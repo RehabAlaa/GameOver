@@ -1,0 +1,324 @@
+:root {
+  --bg-color: #272b30;
+  --bg-light: #4799eb;
+  --color-gray: #aaa;
+}
+/*loader1 css begins*/
+.main-wrap {
+  background-color: var(--bg-color);
+  color: #fff;
+  height: 520px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999999;
+}
+
+.main-wrap--white {
+  background-color: var(--bg-color);
+}
+
+#cssLoader1.main-wrap .child-common {
+  width: 8px;
+  height: 50px;
+  /*margin-right:5px;*/
+  margin-right: 3px;
+  background-color: #fff;
+  -webkit-animation: animate1 1s infinite;
+  animation: animate1 1s infinite;
+  float: left;
+}
+
+#cssLoader1.main-wrap .child1 {
+  margin-right: 3px;
+}
+
+#cssLoader1.main-wrap .child10 {
+  -webkit-animation-delay: 0.9s;
+  animation-delay: 0.9s;
+}
+
+#cssLoader1.main-wrap .child9 {
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+}
+
+#cssLoader1.main-wrap .child8 {
+  -webkit-animation-delay: 0.7s;
+  animation-delay: 0.7s;
+}
+
+#cssLoader1.main-wrap .child7 {
+  -webkit-animation-delay: 0.6s;
+  animation-delay: 0.6s;
+}
+
+#cssLoader1.main-wrap .child6 {
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
+}
+
+#cssLoader1.main-wrap .child5 {
+  -webkit-animation-delay: 0.4s;
+  animation-delay: 0.4s;
+}
+
+#cssLoader1.main-wrap .child4 {
+  -webkit-animation-delay: 0.3s;
+  animation-delay: 0.3s;
+}
+
+#cssLoader1.main-wrap .child3 {
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+}
+
+#cssLoader1.main-wrap .child2 {
+  -webkit-animation-delay: 0.1s;
+  animation-delay: 0.1s;
+}
+
+@-webkit-keyframes animate1 {
+  50% {
+    -ms-transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+  }
+}
+
+@keyframes animate1 {
+  50% {
+    -ms-transform: scaleY(0);
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+  }
+}
+/*loader1 css ends*/
+
+cssLoader17 {
+  position: relative;
+  width: 2.5em;
+  height: 2.5em;
+  transform: rotate(165deg);
+}
+.cssLoader17:before,
+.cssLoader17:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  width: 0.5em;
+  height: 0.5em;
+  border-radius: 0.25em;
+  transform: translate(-50%, -50%);
+}
+.cssLoader17:before {
+  animation: before 2s infinite;
+}
+.cssLoader17:after {
+  animation: after 2s infinite;
+}
+
+@keyframes before {
+  0% {
+    width: 0.5em;
+    box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75),
+      -1em 0.5em rgba(111, 202, 220, 0.75);
+  }
+  35% {
+    width: 2.5em;
+    box-shadow: 0 -0.5em rgba(225, 20, 98, 0.75),
+      0 0.5em rgba(111, 202, 220, 0.75);
+  }
+  70% {
+    width: 0.5em;
+    box-shadow: -1em -0.5em rgba(225, 20, 98, 0.75),
+      1em 0.5em rgba(111, 202, 220, 0.75);
+  }
+  100% {
+    box-shadow: 1em -0.5em rgba(225, 20, 98, 0.75),
+      -1em 0.5em rgba(111, 202, 220, 0.75);
+  }
+}
+@keyframes after {
+  0% {
+    height: 0.5em;
+    box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75),
+      -0.5em -1em rgba(233, 169, 32, 0.75);
+  }
+  35% {
+    height: 2.5em;
+    box-shadow: 0.5em 0 rgba(61, 184, 143, 0.75),
+      -0.5em 0 rgba(233, 169, 32, 0.75);
+  }
+  70% {
+    height: 0.5em;
+    box-shadow: 0.5em -1em rgba(61, 184, 143, 0.75),
+      -0.5em 1em rgba(233, 169, 32, 0.75);
+  }
+  100% {
+    box-shadow: 0.5em 1em rgba(61, 184, 143, 0.75),
+      -0.5em -1em rgba(233, 169, 32, 0.75);
+  }
+}
+.loader {
+  position: absolute;
+  top: calc(50% - 1.25em);
+  left: calc(50% - 1.25em);
+}
+body {
+  background-color: var(--bg-color);
+  color: var(--color-gray);
+}
+.loading {
+  background-color: var(--bg-color);
+  color: var(--color-gray);
+  z-index: 99999;
+}
+.navbar {
+  background-color: #272b30 !important;
+  border-bottom: 1px solid rgba(28, 28, 28, 0.6);
+}
+.dropdown-item {
+  color: var(--color-gray);
+}
+.dropdown-menu {
+  background-color: #3a3f44;
+  border: 0 solid rgba(0, 0, 0, 0.6);
+  border-radius: 0.25rem;
+  -webkit-border-radius: 0.25rem;
+  -moz-border-radius: 0.25rem;
+  -ms-border-radius: 0.25rem;
+  -o-border-radius: 0.25rem;
+}
+.dropdown-item:hover {
+  color: #fff;
+  text-decoration: none;
+  background-color: #272b30;
+}
+
+.navbar .logo {
+  width: 70px;
+}
+.my-inputs {
+  background-color: #1c1e22;
+  border: 0 solid rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+  color: #fff;
+}
+.bg-register-image {
+  background-image: url("./assets/gaming.jpg");
+  background-size: 100% 100%;
+}
+
+.btn-submit {
+  color: #fff;
+  background-color: #3a3f44;
+  border-color: #22241d;
+  border-color: #101112;
+  outline: none;
+}
+.btn:hover {
+  background-image: linear-gradient(#101112, #17191b 40%, #1b1e20);
+  background-repeat: no-repeat;
+  border: none;
+}
+.gray {
+  background-color: #32383e;
+}
+.text-gray {
+  color: rgb(152 152 152);
+}
+.bordr {
+  border: 1px solid var(--bg-light);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  color: var(--bg-light) !important;
+  cursor: pointer;
+  text-align: center;
+}
+.bordr:hover {
+  background-color: var(--bg-light);
+  color: #fff !important;
+}
+.blue {
+  color: #49acff !important;
+}
+.title {
+  background: url("../src/assets/paladins.b44d33d6e7ee1ba8.png");
+  background-repeat: no-repeat;
+  background-color: #1c1e22;
+  background-position: top;
+  background-size: contain;
+  border-radius: 0.3rem;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(0, 0, 0, 0.6);
+  padding: 4rem 2rem;
+}
+.card-box:hover .card {
+  transform: scale(1.03);
+}
+.card {
+  background-color: #32383e;
+  border: 0 solid rgba(0, 0, 0, 0.6);
+  border-radius: 0.25rem;
+  transition: transform 1s;
+  -webkit-transition: transform 1s;
+  -moz-transition: transform 1s;
+  -ms-transition: transform 1s;
+  -o-transition: transform 1s;
+}
+.card-btn {
+  background-color: var(--bg-light);
+  color: #fff;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+.genre {
+  background-color: #7a8288;
+  padding-top: 1px;
+  padding-bottom: 2px;
+  transform: translateY(-12%);
+}
+.details,
+.details:hover {
+  color: var(--color-gray);
+}
+.dark {
+  color: var(--color-gray);
+  background-color: #32383e;
+  border-color: #32383e;
+}
+.dark:hover {
+  color: #fff;
+  background-color: #3a3f44;
+  border-color: #3a3f44;
+}
+
+.deep-dark {
+  background-color: #1c1e22;
+  border: 0 solid rgba(0, 0, 0, 0.6);
+  border-radius: 5px;
+}
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #d9d9d9;
+}
