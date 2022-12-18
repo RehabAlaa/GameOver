@@ -1,9 +1,10 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
-import OwlCarousel from "react-owl-carousel";
-import "owl.carousel/dist/assets/owl.carousel.css";
-import "owl.carousel/dist/assets/owl.theme.default.css";
+// import OwlCarousel from "react-owl-carousel";
+// import "owl.carousel/dist/assets/owl.carousel.css";
+// import "owl.carousel/dist/assets/owl.theme.default.css";
+import Carousel from "react-bootstrap/Carousel";
 
 export default function Gamedetails() {
   let param = useParams();
@@ -96,9 +97,8 @@ export default function Gamedetails() {
               ) : (
                 ""
               )}
-
-              <OwlCarousel items={1} loop autoplay={true}>
-                <div>
+              <Carousel controls={false} indicators={false}>
+                <Carousel.Item>
                   {gameDetails.screenshots ? (
                     <img
                       src={gameDetails.screenshots[0]?.image}
@@ -112,9 +112,8 @@ export default function Gamedetails() {
                       alt="screenshot"
                     />
                   )}
-                </div>
-
-                <div>
+                </Carousel.Item>
+                <Carousel.Item>
                   {gameDetails.screenshots ? (
                     <img
                       src={gameDetails.screenshots[1]?.image}
@@ -128,9 +127,8 @@ export default function Gamedetails() {
                       alt="screenshot"
                     />
                   )}
-                </div>
-
-                <div>
+                </Carousel.Item>
+                <Carousel.Item>
                   {gameDetails.screenshots ? (
                     <img
                       src={gameDetails.screenshots[2]?.image}
@@ -144,8 +142,8 @@ export default function Gamedetails() {
                       alt="screenshot"
                     />
                   )}
-                </div>
-              </OwlCarousel>
+                </Carousel.Item>
+              </Carousel>
               <h2 className="py-4">Additional Information</h2>
 
               <div className="row">

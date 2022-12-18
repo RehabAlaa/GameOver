@@ -143,6 +143,7 @@ function App() {
         },
         { path: "login", element: <Login decodeUserData={decodeUserData} /> },
         { index: true, element: <Register /> },
+        { path: "*", element: <Register /> },
       ],
     },
   ]);

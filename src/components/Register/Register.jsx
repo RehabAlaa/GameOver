@@ -75,7 +75,7 @@ export default function Register() {
                     lowercase
                   </div>
                 );
-              } else {
+              } else {s
                 return (
                   <div key={index} className="alert text-white bg-danger">
                     ERROR! {error.message}
@@ -99,13 +99,13 @@ export default function Register() {
                     name="first_name"
                     id="first_name"
                   />
-                  <p className="text-danger">
+                  <small className="text-danger">
                     {
                       errorList.filter(
                         (error) => error.context.label === "first_name"
                       )[0]?.message
                     }
-                  </p>
+                  </small>
                 </div>
                 <div className="col-sm-6">
                   <input
@@ -116,13 +116,13 @@ export default function Register() {
                     name="last_name"
                     id="last_name"
                   />
-                  <p className="text-danger">
+                  <small className="text-danger">
                     {
                       errorList.filter(
                         (error) => error.context.label === "last_name"
                       )[0]?.message
                     }
-                  </p>
+                  </small>
                 </div>
               </div>
               <div className="form-group mb-3">
@@ -134,13 +134,13 @@ export default function Register() {
                   name="email"
                   id="email"
                 />
-                <p className="text-danger">
+                <small className="text-danger">
                   {
                     errorList.filter(
                       (error) => error.context.label === "email"
                     )[0]?.message
                   }
-                </p>
+                </small>
               </div>
               <div className="form-group mb-3">
                 <input
@@ -151,13 +151,13 @@ export default function Register() {
                   name="age"
                   id="age"
                 />
-                <p className="text-danger">
+                <small className="text-danger">
                   {
                     errorList.filter(
                       (error) => error.context.label === "age"
                     )[0]?.message
                   }
-                </p>
+                </small>
               </div>
               <div className="form-group mb-3">
                 <input
@@ -168,13 +168,13 @@ export default function Register() {
                   name="password"
                   id="password"
                 />
-                <p className="text-danger">
+                <small className="text-danger">
                   {errorList.filter(
                     (error) => error.context.label === "password"
                   )[0]
-                    ? '"password" should start with uppercase the form 3 and 8 characters lowercase'
+                    ? '"password" should start with only one uppercase character and from 3 to 8 lowercase characters '
                     : ""}
-                </p>
+                </small>
               </div>
               <button
                 type="submit"
